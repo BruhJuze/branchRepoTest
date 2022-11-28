@@ -4,7 +4,7 @@ import { IOmdbResponse } from "./models/IOmdbResponse";
 
 
 axios
-  .get<IOmdbResponse>("http://www.omdbapi.com/?apikey=416ed51a&s=star")
+  .get<IOmdbResponse>("http://www.omdbapi.com/?apikey=416ed51a&s=terminator")
   .then((response) => {
     console.log(response.data.Search);
     createHtml(response.data.Search);
